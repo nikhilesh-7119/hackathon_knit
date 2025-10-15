@@ -50,7 +50,7 @@ class _PredictionPageState extends State<PredictionPage> {
       print('================================');
 
       setState(() {
-        _prediction = response['prediction']?.toString() ?? 'No prediction available';
+        _prediction = response['predicted_cost']?.toString() ?? 'No prediction available';
       });
     } catch (e) {
       setState(() {
@@ -226,7 +226,7 @@ class _PredictionPageState extends State<PredictionPage> {
                             ),
                             const SizedBox(height: 16),
                             Text(
-                              _error != null ? 'Error' : 'Prediction Result',
+                              _error != null ? 'Error' : 'Predicted Cost',
                               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                                 color: _error != null 
                                     ? Theme.of(context).colorScheme.onErrorContainer
@@ -236,12 +236,13 @@ class _PredictionPageState extends State<PredictionPage> {
                             ),
                             const SizedBox(height: 12),
                             Text(
-                              _error ?? _prediction!,
+                              _error ?? '₹${_prediction!}',
                               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                                 color: _error != null 
                                     ? Theme.of(context).colorScheme.onErrorContainer
                                     : Theme.of(context).colorScheme.onPrimaryContainer,
                                 fontWeight: FontWeight.w500,
+                                fontSize: 24,
                               ),
                               textAlign: TextAlign.center,
                             ),

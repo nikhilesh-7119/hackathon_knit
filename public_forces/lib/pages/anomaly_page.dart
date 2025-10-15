@@ -222,7 +222,7 @@ class _AnomalyPageState extends State<AnomalyPage> with SingleTickerProviderStat
           else
             Column(
               children: [
-                _buildDataGrid(_flaggedData),
+                _buildDataGrid(_flaggedData, 'combined_anomaly'),
                 const SizedBox(height: 24),
                 _buildPaginationControls(),
               ],
@@ -265,7 +265,7 @@ class _AnomalyPageState extends State<AnomalyPage> with SingleTickerProviderStat
           else
             Column(
               children: [
-                _buildDataGrid(_numberData),
+                _buildDataGrid(_numberData, 'anomaly_flag'),
                 const SizedBox(height: 24),
                 _buildPaginationControlsNumber(),
               ],
@@ -275,7 +275,7 @@ class _AnomalyPageState extends State<AnomalyPage> with SingleTickerProviderStat
     );
   }
 
-  Widget _buildDataGrid(List<Map<String, dynamic>> data) {
+  Widget _buildDataGrid(List<Map<String, dynamic>> data, String columnName) {
     if (data.isEmpty) return const SizedBox.shrink();
     
     // Get all unique keys from the data
@@ -308,16 +308,38 @@ class _AnomalyPageState extends State<AnomalyPage> with SingleTickerProviderStat
               ),
             ),
           )).toList(),
-          rows: data.map((item) => DataRow(
-            cells: columns.map((column) => DataCell(
-              Text(
-                item[column]?.toString() ?? 'N/A',
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: Theme.of(context).colorScheme.onSurface,
+          rows: data.map((item) {
+            bool shouldHighlight = false;
+            
+            if (columnName == 'combined_anomaly') {
+              // For Flagged tab: check combined_anomaly >= 0.7
+              if (item.containsKey('combined_anomaly')) {
+                double? anomalyValue = double.tryParse(item['combined_anomaly'].toString());
+                shouldHighlight = anomalyValue != null && anomalyValue >= 0.7;
+              }
+            } else if (columnName == 'anomaly_flag') {
+              // For Number tab: check anomaly_flag == 1
+              if (item.containsKey('anomaly_flag')) {
+                shouldHighlight = item['anomaly_flag'] == 1 || item['anomaly_flag'] == '1';
+              }
+            }
+            
+            // Set row color based on the condition
+            Color rowColor = shouldHighlight ? Colors.red.withOpacity(0.3) : Colors.green.withOpacity(0.3);
+            
+            return DataRow(
+              color: MaterialStateProperty.all(rowColor),
+              cells: columns.map((column) => DataCell(
+                Text(
+                  item[column]?.toString() ?? 'N/A',
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: Theme.of(context).colorScheme.onSurface,
+                    fontWeight: shouldHighlight ? FontWeight.w600 : FontWeight.normal,
+                  ),
                 ),
-              ),
-            )).toList(),
-          )).toList(),
+              )).toList(),
+            );
+          }).toList(),
         ),
       ),
     );

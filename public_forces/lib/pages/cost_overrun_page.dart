@@ -155,16 +155,30 @@ class _CostOverRunPageState extends State<CostOverRunPage> {
               ),
             ),
           )).toList(),
-          rows: data.map((item) => DataRow(
-            cells: columns.map((column) => DataCell(
-              Text(
-                item[column]?.toString() ?? 'N/A',
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: Theme.of(context).colorScheme.onSurface,
+
+          rows: data.map((item) {
+            // Check if cost overrun column exists and get its value
+            bool hasCostOverrun = false;
+            if (item.containsKey('cost_overrun')) {
+              hasCostOverrun = item['cost_overrun'] == 1 || item['cost_overrun'] == '1';
+            }
+            
+            // Set row color based on cost overrun value
+            Color rowColor = hasCostOverrun ? Colors.red.withOpacity(0.3) : Colors.green.withOpacity(0.3);
+            
+            return DataRow(
+              color: MaterialStateProperty.all(rowColor),
+              cells: columns.map((column) => DataCell(
+                Text(
+                  item[column]?.toString() ?? 'N/A',
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: Theme.of(context).colorScheme.onSurface,
+                    fontWeight: hasCostOverrun ? FontWeight.w600 : FontWeight.normal,
+                  ),
                 ),
-              ),
-            )).toList(),
-          )).toList(),
+              )).toList(),
+            );
+          }).toList(),
         ),
       ),
     );
