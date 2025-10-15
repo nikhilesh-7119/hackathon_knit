@@ -29,6 +29,7 @@ class _PredictionPageState extends State<PredictionPage> {
   Future<void> _getPrediction() async {
     if (!_formKey.currentState!.validate()) return;
 
+    if (!mounted) return;
     setState(() {
       _isLoading = true;
       _error = null;
@@ -49,14 +50,17 @@ class _PredictionPageState extends State<PredictionPage> {
       print('Response Keys: ${response.keys.toList()}');
       print('================================');
 
+      if (!mounted) return;
       setState(() {
         _prediction = response['predicted_cost']?.toString() ?? 'No prediction available';
       });
     } catch (e) {
+      if (!mounted) return;
       setState(() {
         _error = e.toString();
       });
     } finally {
+      if (!mounted) return;
       setState(() {
         _isLoading = false;
       });

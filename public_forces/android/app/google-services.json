@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "474449796021",
+    "project_id": "todopushnotification-68229",
+    "storage_bucket": "todopushnotification-68229.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474449796021:android:eae1de2136dff74b9f17fc",
+        "android_client_info": {
+          "package_name": "com.example.public_forces"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJDE9yK8DrM8Bhv6hpESqmAxBCbMpxWnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474449796021:android:a41b69cd96c9ece19f17fc",
+        "android_client_info": {
+          "package_name": "com.example.todo_push_notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJDE9yK8DrM8Bhv6hpESqmAxBCbMpxWnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
