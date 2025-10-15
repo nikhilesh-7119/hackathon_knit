@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ReportPage extends StatefulWidget {
   const ReportPage({super.key});
@@ -41,6 +42,11 @@ class _ReportPageState extends State<ReportPage> {
           margin: const EdgeInsets.all(16),
         ),
       );
+      
+      // Navigate back to anomaly page after showing snackbar
+      Future.delayed(const Duration(milliseconds: 500), () {
+        Get.back();
+      });
     }
   }
 

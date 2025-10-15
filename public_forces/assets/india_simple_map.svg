@@ -1,0 +1,34 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- India Map Outline -->
+  <path d="M200,50 L250,60 L280,80 L300,120 L320,160 L330,200 L340,240 L350,280 L360,320 L370,360 L380,400 L370,440 L360,480 L350,500 L300,490 L250,480 L200,470 L150,460 L100,450 L80,420 L70,380 L60,340 L50,300 L40,260 L30,220 L20,180 L10,140 L20,100 L30,60 L40,20 L50,10 L100,20 L150,30 L200,50 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  
+  <!-- State Boundaries (Simplified) -->
+  <!-- North States -->
+  <path d="M150,80 L200,70 L220,90 L200,110 L150,100 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M200,70 L250,60 L270,80 L250,100 L200,90 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M250,60 L300,50 L320,70 L300,90 L250,80 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  
+  <!-- Central States -->
+  <path d="M120,150 L180,140 L200,160 L180,180 L120,170 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M180,140 L240,130 L260,150 L240,170 L180,160 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M240,130 L300,120 L320,140 L300,160 L240,150 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M300,120 L360,110 L380,130 L360,150 L300,140 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  
+  <!-- South States -->
+  <path d="M140,200 L200,190 L220,210 L200,230 L140,220 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M200,190 L260,180 L280,200 L260,220 L200,210 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M260,180 L320,170 L340,190 L320,210 L260,200 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  
+  <!-- East States -->
+  <path d="M320,150 L380,140 L400,160 L380,180 L320,170 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M320,200 L380,190 L400,210 L380,230 L320,220 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  
+  <!-- West States -->
+  <path d="M80,200 L140,190 L160,210 L140,230 L80,220 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M80,250 L140,240 L160,260 L140,280 L80,270 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  
+  <!-- Northeast States -->
+  <path d="M350,100 L400,90 L420,110 L400,130 L350,120 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+  <path d="M350,150 L400,140 L420,160 L400,180 L350,170 Z" fill="#e8e8e8" stroke="#666" stroke-width="1"/>
+</svg>

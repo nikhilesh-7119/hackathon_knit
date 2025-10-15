@@ -104,8 +104,8 @@ class _PredictionPageState extends State<PredictionPage> {
                       Expanded(
                         child: _buildTextField(
                           controller: _originalCostController,
-                          label: 'Original Cost',
-                          hint: 'Enter original cost',
+                          label: 'Original Cost (in Cr)',
+                          hint: 'Enter original cost (Cr)',
                           validator: (value) {
                             if (value == null || value.trim().isEmpty) {
                               return 'Please enter original cost';
@@ -142,8 +142,8 @@ class _PredictionPageState extends State<PredictionPage> {
                       Expanded(
                         child: _buildTextField(
                           controller: _cumulativeExpenditureController,
-                          label: 'Cumulative Expenditure',
-                          hint: 'Enter cumulative expenditure',
+                          label: 'Cumulative Expenditure (in Cr)',
+                          hint: 'Enter cumulative expenditure(Cr)',
                           validator: (value) {
                             if (value == null || value.trim().isEmpty) {
                               return 'Please enter cumulative expenditure';
@@ -222,11 +222,11 @@ class _PredictionPageState extends State<PredictionPage> {
                               size: 48,
                               color: _error != null 
                                   ? Theme.of(context).colorScheme.error
-                                  : Theme.of(context).colorScheme.primary,
+                                  : Theme.of(context).colorScheme.onPrimary,
                             ),
                             const SizedBox(height: 16),
                             Text(
-                              _error != null ? 'Error' : 'Predicted Cost',
+                              _error != null ? 'Error' : 'Predicted Cost (in Cr)',
                               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                                 color: _error != null 
                                     ? Theme.of(context).colorScheme.onErrorContainer

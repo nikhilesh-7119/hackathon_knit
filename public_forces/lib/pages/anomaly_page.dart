@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../services/api_service.dart';
+import 'report_page.dart';
 
 class AnomalyPage extends StatefulWidget {
   const AnomalyPage({super.key});
@@ -308,7 +310,9 @@ class _AnomalyPageState extends State<AnomalyPage> with SingleTickerProviderStat
               ),
             ),
           )).toList(),
-          rows: data.map((item) {
+          rows: data.asMap().entries.map((entry) {
+            int index = entry.key;
+            Map<String, dynamic> item = entry.value;
             bool shouldHighlight = false;
             
             if (columnName == 'combined_anomaly') {
@@ -330,11 +334,20 @@ class _AnomalyPageState extends State<AnomalyPage> with SingleTickerProviderStat
             return DataRow(
               color: MaterialStateProperty.all(rowColor),
               cells: columns.map((column) => DataCell(
-                Text(
-                  item[column]?.toString() ?? 'N/A',
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Theme.of(context).colorScheme.onSurface,
-                    fontWeight: shouldHighlight ? FontWeight.w600 : FontWeight.normal,
+                GestureDetector(
+                  onTap: () {
+                    Get.to(() => const ReportPage());
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+                    child: Text(
+                      item[column]?.toString() ?? 'N/A',
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: Theme.of(context).colorScheme.onSurface,
+                        fontWeight: shouldHighlight ? FontWeight.w600 : FontWeight.normal,
+                      ),
+                    ),
                   ),
                 ),
               )).toList(),

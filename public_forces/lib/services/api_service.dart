@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 /// API service class containing pure functions for API calls
 class ApiService {
   // Base URL for the API
-  static const String baseUrl = 'https://thats-elderly-cadillac-incident.trycloudflare.com';
+  static const String baseUrl = 'https://hackathon-knit.onrender.com';
 
   /// Pure function to call the analysis-data API endpoint
   /// 

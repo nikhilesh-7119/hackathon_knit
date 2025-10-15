@@ -1,0 +1,148 @@
+<svg viewBox="0 0 1000 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- India Map with State Boundaries -->
+  
+  <!-- Jammu & Kashmir -->
+  <path d="M450,50 L500,40 L550,60 L520,100 L480,90 L450,50 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="jammu-kashmir"/>
+  
+  <!-- Himachal Pradesh -->
+  <path d="M480,100 L520,90 L550,120 L520,150 L480,140 L480,100 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="himachal-pradesh"/>
+  
+  <!-- Punjab -->
+  <path d="M450,150 L500,140 L520,170 L480,180 L450,150 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="punjab"/>
+  
+  <!-- Haryana -->
+  <path d="M480,180 L520,170 L540,200 L500,210 L480,180 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="haryana"/>
+  
+  <!-- Delhi -->
+  <path d="M500,200 L520,190 L530,210 L510,220 L500,200 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="delhi"/>
+  
+  <!-- Rajasthan -->
+  <path d="M350,200 L450,180 L480,220 L380,250 L350,200 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="rajasthan"/>
+  
+  <!-- Uttar Pradesh -->
+  <path d="M480,220 L580,200 L620,250 L520,280 L480,220 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="uttar-pradesh"/>
+  
+  <!-- Uttarakhand -->
+  <path d="M520,150 L580,140 L600,180 L540,190 L520,150 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="uttarakhand"/>
+  
+  <!-- Bihar -->
+  <path d="M580,280 L650,260 L680,300 L610,320 L580,280 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="bihar"/>
+  
+  <!-- Jharkhand -->
+  <path d="M580,320 L650,300 L680,340 L610,360 L580,320 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="jharkhand"/>
+  
+  <!-- West Bengal -->
+  <path d="M650,300 L750,280 L780,320 L680,340 L650,300 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="west-bengal"/>
+  
+  <!-- Sikkim -->
+  <path d="M700,350 L720,340 L730,360 L710,370 L700,350 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="sikkim"/>
+  
+  <!-- Assam -->
+  <path d="M750,320 L850,300 L880,340 L780,360 L750,320 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="assam"/>
+  
+  <!-- Arunachal Pradesh -->
+  <path d="M850,300 L950,280 L980,320 L880,340 L850,300 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="arunachal-pradesh"/>
+  
+  <!-- Manipur -->
+  <path d="M850,360 L900,350 L910,380 L860,390 L850,360 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="manipur"/>
+  
+  <!-- Mizoram -->
+  <path d="M850,390 L900,380 L910,410 L860,420 L850,390 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="mizoram"/>
+  
+  <!-- Tripura -->
+  <path d="M800,380 L850,370 L860,400 L810,410 L800,380 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="tripura"/>
+  
+  <!-- Meghalaya -->
+  <path d="M750,360 L800,350 L810,380 L760,390 L750,360 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="meghalaya"/>
+  
+  <!-- Nagaland -->
+  <path d="M850,340 L900,330 L910,360 L860,370 L850,340 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="nagaland"/>
+  
+  <!-- Madhya Pradesh -->
+  <path d="M350,250 L480,220 L520,280 L450,350 L350,300 L350,250 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="madhya-pradesh"/>
+  
+  <!-- Chhattisgarh -->
+  <path d="M450,350 L550,320 L580,380 L480,410 L450,350 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="chhattisgarh"/>
+  
+  <!-- Odisha -->
+  <path d="M580,380 L680,360 L710,400 L610,420 L580,380 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="odisha"/>
+  
+  <!-- Gujarat -->
+  <path d="M200,300 L350,250 L380,300 L250,350 L200,300 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="gujarat"/>
+  
+  <!-- Maharashtra -->
+  <path d="M250,350 L450,300 L480,380 L280,430 L250,350 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="maharashtra"/>
+  
+  <!-- Goa -->
+  <path d="M200,450 L220,440 L230,460 L210,470 L200,450 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="goa"/>
+  
+  <!-- Karnataka -->
+  <path d="M280,430 L450,380 L480,450 L310,500 L280,430 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="karnataka"/>
+  
+  <!-- Kerala -->
+  <path d="M250,500 L350,480 L370,520 L270,540 L250,500 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="kerala"/>
+  
+  <!-- Tamil Nadu -->
+  <path d="M350,500 L500,450 L530,520 L380,570 L350,500 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="tamil-nadu"/>
+  
+  <!-- Andhra Pradesh -->
+  <path d="M450,450 L580,420 L610,480 L480,510 L450,450 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="andhra-pradesh"/>
+  
+  <!-- Telangana -->
+  <path d="M450,380 L550,360 L580,420 L480,440 L450,380 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="telangana"/>
+  
+  <!-- Union Territories -->
+  <!-- Ladakh -->
+  <path d="M400,50 L450,40 L480,80 L430,90 L400,50 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="ladakh"/>
+  
+  <!-- Andaman & Nicobar -->
+  <path d="M900,600 L950,580 L970,620 L920,640 L900,600 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="andaman-nicobar"/>
+  
+  <!-- Lakshadweep -->
+  <path d="M100,500 L150,480 L170,520 L120,540 L100,500 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="lakshadweep"/>
+  
+  <!-- Puducherry -->
+  <path d="M400,550 L420,540 L430,560 L410,570 L400,550 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="puducherry"/>
+  
+  <!-- Dadra & Nagar Haveli and Daman & Diu -->
+  <path d="M220,400 L240,390 L250,410 L230,420 L220,400 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="dadra-nagar-haveli-daman-diu"/>
+  
+  <!-- Chandigarh -->
+  <path d="M470,170 L480,160 L490,180 L480,190 L470,170 Z" 
+        fill="#f0f0f0" stroke="#333" stroke-width="1" id="chandigarh"/>
+</svg>
